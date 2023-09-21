@@ -1,8 +1,12 @@
+#container{
+  display: flex;
+  flex-direction: column;
+}
+
 #header {
   display: flex;
   align-items: center;
   height: 3.5rem;
-  background-color: #B3EFFF;
   color: #1C304A;
   font-weight: bold;
 
@@ -17,8 +21,10 @@
     
     .btn {
       margin: 1rem;
-      width: 3.5rem;
-      height: 2rem; 
     }
   }
 }
+
+// #main {
+  // margin-top: 3.5rem;
+// }
