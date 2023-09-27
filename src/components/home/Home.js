@@ -1,10 +1,12 @@
 import { useState } from "react";
 import CustomInput from "../../customComponent/component/CustomInput";
+import RecommendGroups from "./RecommendGroups";
 
 const Home = (props) => {
   // state
   const [searchValue, setSearchValue] = useState("")
-  
+
+  console.log(searchValue)
   const handleChangeInput = (e) => {
     setSearchValue(e.value)
   }  
@@ -22,8 +24,8 @@ const Home = (props) => {
       </div>
 
       {/* 인기 순 */}
-      <div className="popular-groups">
-
+      <div className="recommend-groups">
+        <RecommendGroups />
       </div>
     </div>
   )

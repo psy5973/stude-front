@@ -1,13 +1,19 @@
-import { useState } from "react"
+// import { useState } from "react"
 import "../scss/CustomInput.scss"
 
 const CustomInput = (props) => {
-  const [className, setClassName] = useState("customInput")
+  // defaultProps
+  const {
+    width = "10rem",
+    height = "2rem",
+    className = "",
+    placeholder = "",
+  } = props;
 
   const setStyle = () => {
     let style = {}
-    style.width = props.width;
-    style.height = props.height;
+    style.width = width;
+    style.height = height;
 
     return style;
   }
@@ -24,18 +30,11 @@ const CustomInput = (props) => {
   return(
     <input 
       style={setStyle()} 
-      className={`${className} ${props.className}`} 
-      placeholder={props.placeholder}
+      className={`customInput ${className}`} 
+      placeholder={placeholder}
       onChange={e => handleChange(e)}
     />
   )
 }
-
-CustomInput.defaultProps = {
-  width: "10rem",
-  height: "2rem",
-  className: "",
-  placeholder: ""
-};
 
 export default CustomInput;

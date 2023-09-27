@@ -11,11 +11,11 @@ const App = () => {
   
 
   return (
-    <div id="container">
+    <div id="stude-wrap">
       <header id='header'>
         <Header />
       </header>
-      <main id='main'>
+      <main id='content'>
         <BrowserRouter>
           <Suspense fallback={<div>render...</div>}>
             <Routes>

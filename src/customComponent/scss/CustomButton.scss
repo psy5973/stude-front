@@ -4,12 +4,19 @@
   width: 3.5rem;
   height: 2rem;
   cursor: pointer;
-}
 
-.textBtn {
-  border: none;
-
-  &:hover {
-    color: #F2F2F2;
+  /* type */
+  &.textBtn {
+    border: none;
+  
+    &:hover {
+      color: #F2F2F2;
+    }
   }
+
+  /* size */
+  // &.big {
+
+  // }
 }
+
